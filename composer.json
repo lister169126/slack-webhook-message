@@ -3,10 +3,12 @@
 	"type": "library",
 	"description": "Easy slack message sender using webhook",
 	"keywords": ["slack", "webhook", "message"],
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "František Musil",
-			"email": "lister@gamesplit.cz"
+			"email": "lister@gamesplit.cz",
+			"homepage": "https://www.gamesplit.cz"
 		}
 	],
 	"require": {
