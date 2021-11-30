@@ -1,0 +1,22 @@
+{
+	"name": "lister169126/slack-webhook-message",
+	"type": "library",
+	"description": "Easy slack message sender using webhook",
+	"keywords": ["slack", "webhook", "message"],
+	"authors": [
+		{
+			"name": "František Musil",
+			"email": "lister@gamesplit.cz"
+		}
+	],
+	"require": {
+		"php" : ">=5.6",
+		"ext-curl": "*",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"lister169126\\SlackWebhookMessage\\": "src"
+		}
+	}
+}
