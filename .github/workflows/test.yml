@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run command
-        run: echo "Hello, World!"
+        run: vercel --help
