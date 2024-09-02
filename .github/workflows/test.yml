@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-runner:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: run command
         run: vercel --help
