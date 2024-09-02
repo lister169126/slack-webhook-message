@@ -1,0 +1,14 @@
+---
+name: Build PHPs
+run-name: Build base image and PHP images
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  test-runner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run command
+        run: echo "Hello, World!"
