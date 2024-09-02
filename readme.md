@@ -1,28 +1,33 @@
-# slack-webhook-message
-Slack message sender using webhook as other, but works.
+# Express.js on Vercel
 
-Today (2021-11-30) I tested few PHP libraries for sending message to the Slack channel via webhook. In many case slack returns "ok" response, but no new message in any channel. This works for me...
+Simple Express.js + Vercel example that uses Vercel Postgres to add and display users in a table.
 
-## Install
-`composer require lister169126/slack-webhook-message`
+## How to Use
 
-## Using in nette
-Set in neon file:
-```yaml
-parameters:
-  slack:
-    webhookUrl: https://xyz
-services:
-  - lister169126\SlackWebhookMessage\SlackMessage(%slack.webhookUrl%)
+BE sure to create a Vercel Postgres database and add you environment variables to your `.env` file. You can find an example of the `.env` file in the `.env.example` file.
+
+You can choose from one of the following two methods to use this repository:
+
+### One-Click Deploy
+
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/express&project-name=express&repository-name=express)
+
+### Clone and Deploy
+
+```bash
+git clone https://github.com/vercel/examples/tree/main/solutions/express
 ```
-In code using nette:
-```php
-$slack = $container->getByType(lister169126\SlackWebhookMessage\SlackMessage::class);
-$slack->sendMessage('test alert');
+
+Install the Vercel CLI:
+
+```bash
+npm i -g vercel
 ```
 
-In code plain PHP:
-```php
-$slack = new lister169126\SlackWebhookMessage\SlackMessage('https://xyz');
-$slack->sendMessage('test alert');
+Then run the app at the root of the repository:
+
+```bash
+vercel dev
 ```
