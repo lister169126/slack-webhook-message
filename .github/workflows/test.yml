@@ -3,11 +3,8 @@ name: Test
 run-name: Test something
 on:
   push:
-    branches:
-      - test
   pull_request:
-    branches:
-      - test
+    types: [opened, synchronize, reopened]
 
 jobs:
   test-runner:
