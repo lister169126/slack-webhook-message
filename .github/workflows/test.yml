@@ -9,8 +9,14 @@ on:
 jobs:
   test-runner:
     runs-on: self-hosted
-    container:
-      image: dockette/vercel:latest
+#    container:
+#      image: dockette/vercel:latest
     steps:
+      - name: run command
+        run: echo $UID
+      - name: run command
+        run: echo $GITHUB_WORKSPACE
+      - name: run command
+        run: docker run hello-world
       - name: run command
         run: vercel --help
