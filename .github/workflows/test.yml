@@ -9,6 +9,8 @@ on:
 jobs:
   test-runner:
     runs-on: self-hosted
+    container:
+      image: dockette/vercel:latest
     steps:
       - name: run command
         run: vercel --help
