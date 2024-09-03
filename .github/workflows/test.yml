@@ -1,6 +1,6 @@
 ---
-name: Build PHPs
-run-name: Build base image and PHP images
+name: Test
+run-name: Test something
 on:
   push:
     branches:
