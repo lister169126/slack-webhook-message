@@ -4,7 +4,6 @@ run-name: Test something
 on:
   push:
   pull_request:
-    types: [opened, synchronize, reopened]
 
 jobs:
   test-runner:
