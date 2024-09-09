@@ -4,9 +4,11 @@ run-name: Test something
 on:
   push:
   pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   test-runner:
+    #if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: self-hosted
     container:
       image: dockette/vercel:latest
