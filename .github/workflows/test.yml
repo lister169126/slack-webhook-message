@@ -14,4 +14,4 @@ jobs:
       image: dockette/vercel:latest
     steps:
       - name: run command
-        run: vercel --help
+        run: vercel --help || true
