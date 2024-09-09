@@ -13,5 +13,8 @@ jobs:
     container:
       image: dockette/vercel:latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: run command
         run: vercel --help || true
