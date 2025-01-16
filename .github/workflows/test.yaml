@@ -1,0 +1,17 @@
+---
+name: Test docker
+on: workflow_dispatch
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+    container:
+      image: lister169126/php:8.3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - run: |
+          echo "Running Script"
+          cd /work
+          ls -la
